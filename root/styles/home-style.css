@@ -1,0 +1,253 @@
+@font-face {
+  font-family: Gloock;
+  src: url("/root/assets/fonts/Gloock/Gloock-Regular.ttf");
+}
+@font-face {
+  font-family: Quicksand;
+  src: url("/root/assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf");
+}
+
+@keyframes underline {
+  from {text-decoration: none;}
+  to {text-decoration: underline;}
+}
+
+:root {
+  --background-color: #fafafa;
+  --profile-base-color: #fbfafa;
+  --foreground-color: #000000;
+  --nav-bar-height: 8.229167vw;
+  transition: .5s;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.text-shadow-var-one {
+  text-shadow: 0px 0.2083vw 0.5208vw rgba(0, 0, 0, .25);
+}
+
+.box-shadow-var-one {
+  box-shadow: 0px 0.2083vw 0.5208vw 0.5208vw rgba(0, 0, 0, .2);
+}
+
+.box-shadow-var-two {
+  box-shadow: 0px 0.4167vw 0.5208vw -0.2083vw rgba(0, 0, 0, .2);
+}
+
+.flx-clm {
+  display: flex;
+  flex-direction: column;
+}
+
+.full-cen-algn {
+  align-items: center;
+  justify-content: center;
+}
+
+.a-nm {
+  text-decoration: none;
+}
+
+.a-nm:hover {
+  outline: none;
+}
+
+nav {
+  position: absolute;
+  background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, .07) 0%, rgba(255, 255, 255, 0) 100%);
+  background: -moz-linear-gradient(180deg, rgba(0, 0, 0, .07) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.07) 0%, rgba(255, 255, 255, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0000001A", endColorstr="#FFFFFF", GradientType=0);
+  display: flex;
+
+  width: 100vw;
+  height: var(--nav-bar-height);
+  z-index: 100;
+}
+
+.nav-items {
+  width: 100vw;
+  height: var(--nav-bar-height);
+}
+
+.nav-item-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  border: none;
+  margin: 0;
+  padding: 1.8125vw 0vw;
+}
+
+.nav-item-list a {
+  transition: font-weight .25s;
+  font-family: Quicksand;
+  font-size: 1.6667vw;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--foreground-color);
+  margin: 0 3.0729vw;
+}
+
+.nav-item-list a:focus {
+  outline: none;
+}
+
+.nav-item-list a:hover {
+  font-weight: 600;
+}
+
+main {
+  display: flex;
+}
+
+section#intro {
+  display: flex;
+  align-items: center;
+  width: 62.5vw;
+  height: 100vh;
+}
+
+.intro-cont {
+  position: absolute;
+  left: 5.625vw;
+}
+
+.intro-txt {
+  font-family: Quicksand;
+  font-size: 3.90625vw;
+  color: var(--foreground-color);
+  margin: 0;
+}
+
+.intro-name {
+  font-family: Gloock;
+  font-size: 13.489583vw;
+  color: var(--foreground-color);
+  margin: 0;
+}
+
+section#profile {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 37.5vw;
+  height: 100vh;
+}
+
+.pfl-cont {
+  width: 28vw;
+  height: fit-content;
+  border-radius: 1.6667vw;
+  margin: calc(var(--nav-bar-height) - 1.25vw) 2.5vw 1.25vw 0;
+
+  background-color: var(--profile-base-color);
+}
+
+.pfl-upp {
+  width: 100%;
+  height: auto;
+}
+
+.pfl-picture {
+  width: 13.0208vw;
+  height: 13.0208vw;
+  margin: 2.0833vw 0 0 0;
+}
+
+.pfl-name {
+  font-family: Quicksand;
+  font-size: 2vw;
+  color: var(--foreground-color);
+}
+
+.pfl-abt {
+  align-items: flex-start;
+  width: 100%;
+  height: fit-content;
+}
+
+.pfl-abt-cont {
+  width: 100%;
+  height: fit-content;
+}
+
+.abt-txt {
+  font-family: Quicksand;
+  font-size: 1.6vw;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 2.3438vw 0 1.45vw 0;
+  color: var(--foreground-color);
+}
+
+.abt-txt::before,
+.abt-txt::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 7.5vw;
+  height: .15vh;
+  margin: 0 0.8333vw 0 0.8333vw;
+  background-color: var(--foreground-color);
+}
+
+.web-dev-txt {
+  font-family: Quicksand;
+  font-size: 1.5vw;
+  color: var(--foreground-color);
+}
+
+.web-dev-txt::before {
+  content: "";
+  background-image: url("/assets/img/web-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 1.7vw;
+  height: 1.7vw;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0.8333vw;
+}
+
+.grph-dsg-txt {
+  font-family: Quicksand;
+  font-size: 1.5vw;
+  color: var(--foreground-color);
+}
+
+.grph-dsg-txt::before {
+  content: "";
+  background-image: url("/assets/img/graphic-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 1.7vw;
+  height: 1.7vw;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0.8333vw;
+}
+
+.abt-more-cont {
+  align-self: flex-end;
+  width: 100%;
+  margin: 1.25vw 0;
+}
+
+.abt-more {
+  height: 2.6042vw;
+  font-size: 1.7vw;
+  border-radius: 0.8333vw;
+  padding: 0 3.0208vw;
+  color: var(--profile-base-color);
+  background-color: var(--foreground-color);
+}
