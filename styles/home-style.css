@@ -1,10 +1,10 @@
 @font-face {
   font-family: Gloock;
-  src: url("/root/assets/fonts/Gloock/Gloock-Regular.ttf");
+  src: url("/assets/fonts/Gloock/Gloock-Regular.ttf");
 }
 @font-face {
   font-family: Quicksand;
-  src: url("/root/assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf");
+  src: url("/assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf");
 }
 
 @keyframes underline {
