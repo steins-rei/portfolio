@@ -1,10 +1,10 @@
 @font-face {
   font-family: Gloock;
-  src: url("assets/fonts/Gloock/Gloock-Regular.ttf");
+  src: url("../assets/fonts/Gloock/Gloock-Regular.ttf");
 }
 @font-face {
   font-family: Quicksand;
-  src: url("assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf");
+  src: url("../assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf");
 }
 
 /* KEYFRAMES */
@@ -227,7 +227,7 @@ section#profile {
 
 .web-dev-txt::before {
   content: "";
-  background-image: url("assets/img/web-icon.svg");
+  background-image: url("../assets/img/web-icon.svg");
   background-size: contain;
   background-repeat: no-repeat;
   width: 1.7vw;
@@ -245,7 +245,7 @@ section#profile {
 
 .grph-dsg-txt::before {
   content: "";
-  background-image: url("assets/img/graphic-icon.svg");
+  background-image: url("../assets/img/graphic-icon.svg");
   background-size: contain;
   background-repeat: no-repeat;
   width: 1.7vw;
